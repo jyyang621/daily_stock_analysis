@@ -293,7 +293,7 @@ git clone https://github.com/ZhuLinsen/daily_stock_analysis.git
 cd daily_stock_analysis
 
 # 2. 配置环境变量
-cp .env.example .env
+cp .env .env
 vim .env  # 填入 API Key 和配置
 
 # 3. 启动容器
@@ -385,12 +385,12 @@ docker run -d --env-file .env -p 8000:8000 -v ./data:/app/data stock-analysis py
 
 ```bash
 # Python 3.10+ 推荐
-pip install -r requirements.txt
+pip install -r requirements.txt.bak
 
 # 或使用 conda
 conda create -n stock python=3.10
 conda activate stock
-pip install -r requirements.txt
+pip install -r requirements.txt.bak
 ```
 
 **智能导入依赖**：`pypinyin`（名称→代码拼音匹配）和 `openpyxl`（Excel .xlsx 解析）已包含在 `requirements.txt` 中，执行上述 `pip install -r requirements.txt` 时会自动安装。若使用智能导入（图片/CSV/Excel/剪贴板）功能，请确保依赖已正确安装；缺失时可能报 `ModuleNotFoundError`。

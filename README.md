@@ -212,10 +212,10 @@
 git clone https://github.com/ZhuLinsen/daily_stock_analysis.git && cd daily_stock_analysis
 
 # 安装依赖
-pip install -r requirements.txt
+pip install -r requirements.txt.bak
 
 # 配置环境变量
-cp .env.example .env && vim .env
+cp .env .env && vim .env
 
 # 运行分析
 python main.py
@@ -386,7 +386,7 @@ LITELLM_MODEL=openai/deepseek-chat
 ### 本地门禁（建议先跑）
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt.bak
 pip install flake8 pytest
 ./scripts/ci_gate.sh
 ```

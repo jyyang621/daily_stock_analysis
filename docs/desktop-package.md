@@ -91,7 +91,7 @@ npm run build
 
 ```bash
 pip install pyinstaller
-pip install -r requirements.txt
+pip install -r requirements.txt.bak
 python -m PyInstaller --name stock_analysis --onefile --noconsole --add-data "static;static" --hidden-import=multipart --hidden-import=multipart.multipart main.py
 ```
 

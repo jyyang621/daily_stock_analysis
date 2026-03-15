@@ -175,14 +175,14 @@ python3 -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 
 # Install dependencies
-pip install -r requirements.txt
+pip install -r requirements.txt.bak
 ```
 
 #### 3. Configure Environment Variables
 
 ```bash
 # Copy configuration template
-cp .env.example .env
+cp .env .env
 
 # Edit .env file
 nano .env  # or use any editor

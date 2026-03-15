@@ -15,9 +15,9 @@ const appRootDev = path.resolve(__dirname, '..', '..');
 
 function resolveEnvExamplePath() {
   if (app.isPackaged) {
-    return path.join(process.resourcesPath, '.env.example');
+    return path.join(process.resourcesPath, '.env');
   }
-  return path.join(appRootDev, '.env.example');
+  return path.join(appRootDev, '.env');
 }
 
 function resolveAppDir() {

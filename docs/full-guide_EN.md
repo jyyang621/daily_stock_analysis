@@ -243,7 +243,7 @@ git clone https://github.com/ZhuLinsen/daily_stock_analysis.git
 cd daily_stock_analysis
 
 # 2. Configure environment variables
-cp .env.example .env
+cp .env .env
 vim .env  # Fill in API Keys and configuration
 
 # 3. Start container
@@ -333,12 +333,12 @@ docker run -d --env-file .env -p 8000:8000 -v ./data:/app/data stock-analysis py
 
 ```bash
 # Python 3.10+ recommended
-pip install -r requirements.txt
+pip install -r requirements.txt.bak
 
 # Or use conda
 conda create -n stock python=3.10
 conda activate stock
-pip install -r requirements.txt
+pip install -r requirements.txt.bak
 ```
 
 ### Command Line Arguments

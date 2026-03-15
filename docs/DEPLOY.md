@@ -38,7 +38,7 @@ git clone <your-repo-url> /opt/stock-analyzer
 cd /opt/stock-analyzer
 
 # 复制并编辑配置文件
-cp .env.example .env
+cp .env .env
 vim .env  # 填入真实的 API Key 等配置
 ```
 
@@ -103,13 +103,13 @@ source /opt/stock-analyzer/venv/bin/activate
 
 ```bash
 cd /opt/stock-analyzer
-pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install -r requirements.txt.bak -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
 ### 3. 配置环境变量
 
 ```bash
-cp .env.example .env
+cp .env .env
 vim .env  # 填入配置
 ```
 
@@ -421,7 +421,7 @@ schedule:
 
 方法二：直接修改代码后推送：
 ```bash
-# 修改 .env.example 或在代码中设置默认值
+# 修改 .env 或在代码中设置默认值
 git commit -am "Update stock list"
 git push
 ```

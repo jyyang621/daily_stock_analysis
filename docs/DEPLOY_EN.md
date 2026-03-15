@@ -38,7 +38,7 @@ git clone <your-repo-url> /opt/stock-analyzer
 cd /opt/stock-analyzer
 
 # Copy and edit configuration file
-cp .env.example .env
+cp .env .env
 vim .env  # Fill in real API Keys and configuration
 ```
 
@@ -103,13 +103,13 @@ source /opt/stock-analyzer/venv/bin/activate
 
 ```bash
 cd /opt/stock-analyzer
-pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install -r requirements.txt.bak -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
 ### 3. Configure Environment Variables
 
 ```bash
-cp .env.example .env
+cp .env .env
 vim .env  # Fill in configuration
 ```
 
@@ -420,7 +420,7 @@ Method 1: Modify repo Secret `STOCK_LIST`
 
 Method 2: Modify code directly then push:
 ```bash
-# Modify .env.example or set default value in code
+# Modify .env or set default value in code
 git commit -am "Update stock list"
 git push
 ```
